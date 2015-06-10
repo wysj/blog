@@ -5,7 +5,7 @@
   <subtitle><![CDATA[leifeng-hm]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-06-09T06:38:47.000Z</updated>
+  <updated>2015-06-09T09:48:29.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[bbb]]></title>
+    <link href="http://yoursite.com/2015/06/09/bbb/"/>
+    <id>http://yoursite.com/2015/06/09/bbb/</id>
+    <published>2015-06-09T09:24:55.000Z</published>
+    <updated>2015-06-09T09:48:29.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="aa bb cc" scheme="http://yoursite.com/tags/aa-bb-cc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[aaaaa]]></title>
+    <link href="http://yoursite.com/2015/06/09/aaaaa/"/>
+    <id>http://yoursite.com/2015/06/09/aaaaa/</id>
+    <published>2015-06-09T09:24:42.000Z</published>
+    <updated>2015-06-09T09:48:37.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="aa dd mm" scheme="http://yoursite.com/tags/aa-dd-mm/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
