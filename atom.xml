@@ -5,7 +5,7 @@
   <subtitle><![CDATA[leifeng-hm]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="https://leifeng-hm.github.io//"/>
-  <updated>2015-06-12T10:36:29.000Z</updated>
+  <updated>2015-06-16T05:41:49.000Z</updated>
   <id>https://leifeng-hm.github.io//</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title><![CDATA[hexo搭建博客]]></title>
-    <link href="https://leifeng-hm.github.io/2015/06/09/bbb/"/>
-    <id>https://leifeng-hm.github.io/2015/06/09/bbb/</id>
-    <published>2015-06-09T09:24:55.000Z</published>
-    <updated>2015-06-12T10:36:29.000Z</updated>
+    <link href="https://leifeng-hm.github.io/2015/03/14/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://leifeng-hm.github.io/2015/03/14/hexo搭建博客/</id>
+    <published>2015-03-14T09:24:55.000Z</published>
+    <updated>2015-06-16T05:41:49.000Z</updated>
     <content type="html"><![CDATA[<p>尝试用 hexo+github搭建博客</p>
 <h3 id="感想">感想</h3><p>不要看中文的计算机文档了，完全是诱导，直接在github上面看md。。。不要被翻译过来的文字误导了。。。</p>
 ]]></content>
@@ -31,28 +31,6 @@
     </summary>
     
       <category term="随笔" scheme="https://leifeng-hm.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="https://leifeng-hm.github.io/2015/06/09/hello-world/"/>
-    <id>https://leifeng-hm.github.io/2015/06/09/hello-world/</id>
-    <published>2015-06-09T05:51:04.000Z</published>
-    <updated>2015-06-09T06:38:47.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
-    </summary>
     
   </entry>
   
