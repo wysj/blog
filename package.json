@@ -1,18 +1,17 @@
 {
-  "name": "mmz-nodejs",
-  "version": "0.0.1",
-  "description": "mmz is nodejs project",
-  "main": "index.js",
+  "name": "site",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "test"
+    "start": "node ./bin/www"
   },
-  "keywords": [
-    "nodejs"
-  ],
-  "author": "mmz",
-  "license": "MIT",
   "dependencies": {
-    "cookie-parser": "^1.3.5",
-    "express": "^4.13.1"
+    "body-parser": "~1.13.1",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "ejs": "~2.3.2",
+    "express": "~4.13.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0"
   }
 }
