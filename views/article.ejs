@@ -1,15 +1,64 @@
 <%- include header %>
 <p>
-  <% if (user && (user.name == post.name)) { %>
-    <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
-    <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
-  <% } %>
+    <% if (user && (user.name == post.name)) { %>
+        <span>
+            <a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a>
+        </span>
+        <span>
+            <a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a>
+        </span>
+    <% } %>
+    <% var flag = 1 %>
+    <% if (user && (user.name != post.name)) { %>
+        <% if ((post.reprint_info.reprint_from != undefined) && (user.name == post.reprint_info.reprint_from.name)) { %>
+            <% flag = 0 %>
+        <% } %>
+        <% if ((post.reprint_info.reprint_to != undefined)) { %>
+            <% post.reprint_info.reprint_to.forEach(function (reprint_to, index) { %>
+                <% if (user.name == reprint_to.name) { %>
+                    <% flag = 0 %>
+                <% } %>
+            <% }) %>
+        <% } %>
+    <% } else { %>
+    <% flag = 0 %>
+<% } %>
+<% if (flag) { %>
+    <span>
+        <a class="edit" href="/reprint/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">转载</a>
+    </span>
+<% } %>
 </p>
 <p class="info">
-  作者：<a href="/u/<%= post.name %>"><%= post.name %></a> |
-  日期：<%= post.time.minute %>
+作者：
+<a href="/u/<%= post.name %>"><%= post.name %></a>
+| 日期：<%= post.time.minute %>
+<% if (post.reprint_info.reprint_from) { %>
+    <br>
+    <a href="/u/<%= post.reprint_info.reprint_from.name %>/<%= post.reprint_info.reprint_from.day %>/<%= post.reprint_info.reprint_from.title %>">原文链接</a>
+<% } %>
 </p>
 <p><%- post.post %></p>
-<p class="info">阅读：<%= post.pv %> | 评论：<%= post.comments.length %></p>
-<%- include comment %>
+<p class="info">
+阅读：<%= post.pv %>
+| 转载：
+<% if (post.reprint_info.reprint_to) { %>
+    <%= post.reprint_info.reprint_to.length %>
+<% } else { %>
+<%= 0 %>
+<% } %>
+</p>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'mmzwyherokuappcom';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 <%- include footer %>
