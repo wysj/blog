@@ -1,10 +1,47 @@
 <%- include header %>
-<form method='post' action='/upload' enctype='multipart/form-data' >
-  <input type="file" name='file1'/><br>
-  <input type="file" name='file2'/><br>
-  <input type="file" name='file3'/><br>
-  <input type="file" name='file4'/><br>
-  <input type="file" name='file5'/><br>
-  <input type="submit" />
+<form method='post' action='/upload' enctype='multipart/form-data' id="uploadForm">
+    <div class="row">
+        <div class="file-field input-field col s12">
+            <input class="file-path validate" type="file"/>
+            <div class="btn">
+                <span>File1</span>
+                <input type="file" name="file1"/>
+            </div>
+        </div>
+        <div class="file-field input-field col s12">
+            <input class="file-path validate" type="file"/>
+            <div class="btn">
+                <span>File1</span>
+                <input type="file" name="file2"/>
+            </div>
+        </div>
+        <div class="file-field input-field col s12">
+            <input class="file-path validate" type="file"/>
+            <div class="btn">
+                <span>File1</span>
+                <input type="file" name="file3"/>
+            </div>
+        </div>
+        <div class="file-field input-field col s12">
+            <input class="file-path validate" type="file"/>
+            <div class="btn">
+                <span>File1</span>
+                <input type="file" name="file4"/>
+            </div>
+        </div>
+        <div class="file-field input-field col s12">
+            <input class="file-path validate" type="file"/>
+            <div class="btn">
+                <span>File1</span>
+                <input type="file" name="file5"/>
+            </div>
+        </div>
+    </div>
+     <a type="submit" class="waves-effect waves-light btn-large" id="uploadSubmit">上传..</a>
 </form>
+<script type="text/javascript">
+        $('#uploadSubmit').on('click',function(){
+            $('#uploadForm').submit();
+        });
+</script>
 <%- include footer %>

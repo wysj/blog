@@ -1,5 +1,8 @@
 <%- include header %>
 <p>
+    <h2>
+        <p><h2><a href="/p/<%= post._id %>"><%= post.title %></a></h2>
+    </h2>
     <% if (user && (user.name == post.name)) { %>
         <span>
             <a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a>
@@ -38,7 +41,9 @@
     <a href="/u/<%= post.reprint_info.reprint_from.name %>/<%= post.reprint_info.reprint_from.day %>/<%= post.reprint_info.reprint_from.title %>">原文链接</a>
 <% } %>
 </p>
-<p><%- post.post %></p>
+<div class="post-content">
+    <%- post.post %>
+</div>
 <p class="info">
 阅读：<%= post.pv %>
 | 转载：
@@ -61,4 +66,5 @@
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
 <%- include footer %>

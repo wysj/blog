@@ -1,13 +1,43 @@
 <%- include header %>
-<form method="post">
-  标题：<br />
-  <input type="text" name="title" value="<%= post.title %>" disabled="disabled" /><br />
-  标签：<br />
-  <input type="text" name="tag1" value="<%= post.tags[0] %>" disabled="disabled" />
-  <input type="text" name="tag2" value="<%= post.tags[1] %>" disabled="disabled" />
-  <input type="text" name="tag3" value="<%= post.tags[2] %>" disabled="disabled" /><br />
-  正文：<br />
-  <textarea name="post" rows="20" cols="100"><%= post.post %></textarea><br />
-  <input type="submit" value="保存修改" />
-</form>
+
+<div class="row">
+  <form class="col s12" method="post" id="editForm">
+    <div class="row">
+      <div class="input-field col s8">
+        <i class="material-icons prefix">perm_identity</i>
+        <input type="text" name="title" value="<%= post.title %>" disabled="disabled" />
+        <label>标题：</label>
+      </div>
+      <div class="input-field col s12">
+          <div class="input-field s2">
+            <i class="material-icons prefix">turned_in_not</i>
+            <input type="text" name="tag1" value="<%= post.tags[0] %>" disabled="disabled" />
+            <label>标签1：</label>
+          </div>
+          <div class="input-field s2">
+            <input type="text" name="tag2" value="<%= post.tags[1] %>" disabled="disabled" />
+            <label>标签2：</label>
+          </div>
+          <div class="input-field s2">
+            <input type="text" name="tag3" value="<%= post.tags[2] %>" disabled="disabled" />
+            <label>标签3：</label>
+          </div>
+      </div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">mode_edit</i>
+        <textarea id="textarea1" class="materialize-textarea" length="120"><%= post.post %></textarea>
+        <label>正文：</label>
+      </div>
+    </div>
+    <a type="submit" class="waves-effect waves-light btn-large" id="saveEdit">保存修改..</a>
+  </form>
+</div>
+
+
+<script type="text/javascript">
+    $('#loginSubmit').on('click',function(){
+        $('#loginForm').submit();
+    });
+    $('textarea#textarea1').characterCounter();
+</script>
 <%- include footer %>
