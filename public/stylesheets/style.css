@@ -24,43 +24,11 @@ nav a.button-collapse{display: block;color: #333;}
   margin: 1.2rem 0 0.656rem 0;
   text-transform: uppercase;
 }
-.parallax-container {
-  min-height: 200px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
+.banner-container {height: 180px;background: url(https://mmzwy.herokuapp.com/images/bg.jpg) 0 0 repeat;}
 
-.button-collapse {
-  color: #039be5;
-}
+.portfolio h5{text-align: center;text-transform: uppercase;margin-bottom: 15px;}
+.portfolio h6{text-align: center;text-transform: uppercase;margin-bottom: 45px;}
 
-.parallax-container {
-  min-height: 200px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
 
 
 .edit{margin:3px;padding:2px 5px;border-radius:3px;background-color:#f3f3f3;color:#333;font-size:13px;}
