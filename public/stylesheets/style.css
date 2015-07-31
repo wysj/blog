@@ -7,8 +7,61 @@ article{padding-top:.5em;}
 article a{color:#44a5ac;text-decoration:none;}
 article a:hover{text-decoration:underline;}
 .material-icons{vertical-align: middle;}
-
+nav{box-shadow: none;}
+nav a.button-collapse{display: block;color: #333;}
 .post-content{padding: 3em 0;}
+.nav-title {
+  position: absolute;
+  color: #000000;
+  display: inline-block;
+  padding: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 0;
+  font-size: 1.24rem;
+  line-height: 1.804rem;
+  margin: 1.2rem 0 0.656rem 0;
+  text-transform: uppercase;
+}
+.parallax-container {
+  min-height: 200px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.button-collapse {
+  color: #039be5;
+}
+
+.parallax-container {
+  min-height: 200px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
 
 .edit{margin:3px;padding:2px 5px;border-radius:3px;background-color:#f3f3f3;color:#333;font-size:13px;}
 .edit:hover{text-decoration:none;background-color:#f00;color:#fff;-webkit-transition:color .2s linear;}
