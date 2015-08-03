@@ -11,7 +11,7 @@
                 <time><%= post.time.day %></time>
             </li>
             <li>
-                <a href="/u/<%= post.name %>/<%= post.time.day %>/<%= post.title %>"><%= post.title %></a>
+                <a href="/p/<%= post._id %>"><%= post.title %></a>
             </li>
         <% }) %>
     </ul>

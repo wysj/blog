@@ -1,40 +1,10 @@
 <%- include header %>
-<div class="row">
-  <form class="col s12" method="post" id="editForm">
-    <div class="row">
-      <div class="input-field col s12">
-        <i class="material-icons prefix">perm_identity</i>
-        <input type="text" name="title"/>
-        <label>标题：</label>
-      </div>
-      <div class="row">
-          <div class="input-field col s2">
-            <i class="material-icons prefix">turned_in_not</i>
-            <input type="text" name="tag1"/>
-            <label>标签1：</label>
-          </div>
-          <div class="input-field col s2">
-            <input type="text" name="tag2"/>
-            <label>标签2：</label>
-          </div>
-          <div class="input-field col s2">
-            <input type="text" name="tag3"/>
-            <label>标签3：</label>
-          </div>
-      </div>
-      <div class="input-field col s12">
-        <i class="material-icons prefix">mode_edit</i>
-        <textarea id="postTextarea" class="materialize-textarea" length="120" name="post"></textarea>
-        <label>正文：</label>
-      </div>
-    </div>
-    <a type="submit" class="waves-effect waves-light btn-large" id="postSubmit">发布</a>
-  </form>
-</div>
-<script type="text/javascript">
-    $('#postSubmit').on('click',function(){
-        $('#editForm').submit();
-    });
-    $('textarea#textarea1').characterCounter();
-</script>
+<form method="post">
+    标题：<br/>
+    <input name="title" type="text"/><br/>
+    标签：<br/>
+    <input name="tag1" type="text"/><input name="tag2" type="text"/><input name="tag3" type="text"/><br/>
+    正文：<br/>
+    <textarea cols="100" name="post" rows="20"></textarea><br/><input type="submit" value="发表"/>
+</form>
 <%- include footer %>

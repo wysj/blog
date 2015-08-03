@@ -1,34 +1,12 @@
 <%- include header %>
-<div class="row">
-  <form class="col s12"  method="post" id="regForm">
-      <div class="row">
-        <div class="input-field col s8">
-          <i class="material-icons prefix">perm_identity</i>
-          <input type="text" name="name" class="validate">
-          <label>用户名：</label>
-        </div>
-        <div class="input-field col s8">
-          <i class="material-icons prefix">lock_outline</i>
-          <input type="password" name="password" class="validate">
-          <label>密码：</label>
-        </div>
-        <div class="input-field col s8">
-          <i class="material-icons prefix">spellcheck</i>
-          <input type="password" name="password-repeat" class="validate">
-          <label>确认密码：</label>
-        </div>
-        <div class="input-field col s8">
-          <i class="material-icons prefix">email</i>
-          <input type="email" name="password" class="validate">
-          <label>邮箱：</label>
-        </div>
-      </div>
-      <a type="submit" class="waves-effect waves-light btn-large" id="regSubmit">注册..</a>
-  </form>
-</div>
-<script type="text/javascript">
-        $('#regSubmit').on('click',function(){
-            $('#regForm').submit();
-        });
-</script>
+<form method="post">
+    用户名：
+    <input name="name" type="text"/><br/>
+    密码：
+    <input name="password" type="password"/><br/>
+    确认密码：<input name="password-repeat" type="password"/><br/>
+    邮箱：
+    <input name="email" type="email"/><br/>
+    <input type="submit" value="注册"/>
+</form>
 <%- include footer %>
