@@ -7755,3 +7755,5 @@
 ::1 - - [Mon, 03 Aug 2015 02:46:11 GMT] "GET /stylesheets/style.css HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2327.5 Safari/537.36"
 ::1 - - [Mon, 03 Aug 2015 02:46:30 GMT] "GET /tags/%E5%8D%97%E4%BA%AC HTTP/1.1" 200 1095 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2327.5 Safari/537.36"
 ::1 - - [Mon, 03 Aug 2015 02:46:30 GMT] "GET /stylesheets/style.css HTTP/1.1" 304 - "http://localhost:3000/tags/%E5%8D%97%E4%BA%AC" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2327.5 Safari/537.36"
+::1 - - [Tue, 04 Aug 2015 07:13:39 GMT] "GET / HTTP/1.1" 200 2650 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2327.5 Safari/537.36"
+::1 - - [Tue, 04 Aug 2015 07:13:39 GMT] "GET /stylesheets/style.css HTTP/1.1" 200 1919 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2327.5 Safari/537.36"
