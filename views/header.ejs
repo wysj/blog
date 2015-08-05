@@ -3,38 +3,42 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" id="viewport">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+     <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+
     <title>Blog</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/components/normalize.css/normalize.css">
+    <link rel="stylesheet" href="/iconfont/iconfont.css">
+    <link rel="stylesheet" href="/stylesheets/public.css">
 </head>
 
 <body>
-
-    <header>
-        <h1>
-            <%= title %>
-        </h1>
+    <script type="text/javascript">
+    document.body.style.fontSize = '1.6rem';
+    </script>
+    <header class="blog-info tac">
+        <p>mmz的个人博客</p>
+        <p>无耻的使用nodejs驱动..</p>
     </header>
+    <nav class="nav-warp">
+        <h2 class="tac">
+            <%= title %>
+        </h2>
+        <ul class="nav-side container tac">
+            <li><a title="主页" href="/">home</a></li>
+            <li><a title="存档" href="/archive">archive</a></li>
+            <li><a title="标签" href="/tags">tags</a></li>
+            <li><a title="关于我" href="/tags">me</a></li>
+        </ul>
 
-    <nav>
-        <span><a title="主页" href="/">home</a></span>
-        <span><a title="存档" href="/archive">archive</a></span>
-        <span><a title="标签" href="/tags">tags</a></span>
-        <% if (user) { %>
-            <span><a title="上传" href="/upload">upload</a></span>
-            <span><a title="发表" href="/post">post</a></span>
-            <span><a title="登出" href="/logout">logout</a></span>
-            <% } else { %>
-                <span><a title="登录" href="/login">login</a></span>
-                <span><a title="注册" href="/reg">register</a></span>
-                <% } %>
-                    <span>
-                        <form action="/search" method="GET">
-                            <input type="text" name="keyword" placeholder="SEARCH" class="search" />
-                        </form>
-                    </span>
     </nav>
-
-    <article>
+    <article class="container">
 
         <% if (success) { %>
             <div>

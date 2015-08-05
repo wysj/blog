@@ -1,3 +1,20 @@
+    <footer class="info">
+        <ul>
+            <li>
+                <form action="/search" method="GET">
+                    <input type="text" name="keyword" placeholder="SEARCH" class="search" />
+                </form>
+            </li>
+            <% if (user) { %>
+            <li><a title="上传" href="/upload">upload</a></li>
+            <li><a title="发表" href="/post">post</a></li>
+            <li><a title="登出" href="/logout">logout</a></li>
+            <% } else { %>
+            <li><a title="登录" href="/login">login</a></li>
+            <li><a title="注册" href="/reg">register</a></li>
+            <% } %>
+        </ul>
+    </footer>
 </article>
 </body>
 </html>
